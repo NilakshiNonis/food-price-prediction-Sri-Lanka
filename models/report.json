@@ -1,0 +1,526 @@
+{
+ "results": {
+  "Random Forest": {
+   "rmse": 192.85,
+   "mae": 129.33,
+   "r2": 0.9116,
+   "mape_pct": 27.53
+  },
+  "XGBoost": {
+   "rmse": 186.23,
+   "mae": 125.29,
+   "r2": 0.9175,
+   "mape_pct": 26.8
+  },
+  "Stacking (RF+XGB)": {
+   "rmse": 187.22,
+   "mae": 125.64,
+   "r2": 0.9167,
+   "mape_pct": 26.95
+  }
+ },
+ "winner": "XGBoost",
+ "importance": {
+  "Random Forest": [
+   {
+    "feature": "category",
+    "importance": 366.19
+   },
+   {
+    "feature": "commodity",
+    "importance": 126.76
+   },
+   {
+    "feature": "unit",
+    "importance": 54.54
+   },
+   {
+    "feature": "longitude",
+    "importance": 2.75
+   },
+   {
+    "feature": "market",
+    "importance": 2.55
+   },
+   {
+    "feature": "latitude",
+    "importance": 1.43
+   },
+   {
+    "feature": "admin1",
+    "importance": 0.38
+   },
+   {
+    "feature": "month",
+    "importance": 0.08
+   },
+   {
+    "feature": "pricetype",
+    "importance": 0.0
+   },
+   {
+    "feature": "year",
+    "importance": 0.0
+   }
+  ],
+  "XGBoost": [
+   {
+    "feature": "category",
+    "importance": 366.53
+   },
+   {
+    "feature": "commodity",
+    "importance": 149.43
+   },
+   {
+    "feature": "unit",
+    "importance": 40.72
+   },
+   {
+    "feature": "market",
+    "importance": 3.22
+   },
+   {
+    "feature": "longitude",
+    "importance": 2.37
+   },
+   {
+    "feature": "month",
+    "importance": 2.14
+   },
+   {
+    "feature": "latitude",
+    "importance": 1.81
+   },
+   {
+    "feature": "admin1",
+    "importance": 0.36
+   },
+   {
+    "feature": "pricetype",
+    "importance": 0.0
+   },
+   {
+    "feature": "year",
+    "importance": 0.0
+   }
+  ]
+ },
+ "commodities": {
+  "Bananas": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Beans": {
+   "category": "pulses and nuts",
+   "unit": "KG"
+  },
+  "Beans (mung)": {
+   "category": "pulses and nuts",
+   "unit": "KG"
+  },
+  "Cabbage": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Carrots": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Chili (red, dry raw)": {
+   "category": "miscellaneous food",
+   "unit": "KG"
+  },
+  "Coconut": {
+   "category": "vegetables and fruits",
+   "unit": "Unit"
+  },
+  "Cowpeas (whole, average)": {
+   "category": "pulses and nuts",
+   "unit": "KG"
+  },
+  "Eggplants": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Eggs": {
+   "category": "meat, fish and eggs",
+   "unit": "Unit"
+  },
+  "Fish (dry, katta)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (dry, sprats)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (goldstripe sardinella)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (jack)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (sail fish)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (skipjack tuna)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (trenched sardinella)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fish (yellowfin tuna)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Fuel (diesel)": {
+   "category": "non-food",
+   "unit": "L"
+  },
+  "Fuel (petrol-gasoline)": {
+   "category": "non-food",
+   "unit": "L"
+  },
+  "Lentils": {
+   "category": "pulses and nuts",
+   "unit": "KG"
+  },
+  "Meat (chicken, broiler)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Meat (chicken, fresh)": {
+   "category": "meat, fish and eggs",
+   "unit": "KG"
+  },
+  "Oil (coconut)": {
+   "category": "oil and fats",
+   "unit": "750 ML"
+  },
+  "Onions (imported)": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Onions (red)": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Onions (red, imported)": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Onions (red, local)": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Papaya": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Pineapples": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Potatoes (imported)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Potatoes (local)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Pumpkin": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Rice (long grain)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Rice (medium grain)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Rice (red nadu)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Rice (red)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Rice (white)": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  },
+  "Snake gourd": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Sugar": {
+   "category": "miscellaneous food",
+   "unit": "KG"
+  },
+  "Tomatoes": {
+   "category": "vegetables and fruits",
+   "unit": "KG"
+  },
+  "Wheat flour": {
+   "category": "cereals and tubers",
+   "unit": "KG"
+  }
+ },
+ "markets": {
+  "Ampara": {
+   "admin1": "Eastern",
+   "latitude": 7.28,
+   "longitude": 81.67
+  },
+  "Anuradhapura": {
+   "admin1": "North Central",
+   "latitude": 8.34,
+   "longitude": 80.33
+  },
+  "Badulla": {
+   "admin1": "Uva",
+   "latitude": 6.99,
+   "longitude": 81.04
+  },
+  "Bandarawela": {
+   "admin1": "Uva",
+   "latitude": 6.83,
+   "longitude": 80.99
+  },
+  "Batticaloa": {
+   "admin1": "Eastern",
+   "latitude": 7.72,
+   "longitude": 81.7
+  },
+  "Colombo City": {
+   "admin1": "Western",
+   "latitude": 6.93,
+   "longitude": 79.85
+  },
+  "Dammbagalla": {
+   "admin1": "Uva",
+   "latitude": 6.98,
+   "longitude": 81.37
+  },
+  "Dehiattakandiya": {
+   "admin1": "Eastern",
+   "latitude": 7.66,
+   "longitude": 81.05
+  },
+  "Economic Centre - Peliyagoda": {
+   "admin1": "Western",
+   "latitude": 6.97,
+   "longitude": 79.89
+  },
+  "Economic Centre-Dambulla": {
+   "admin1": "Central",
+   "latitude": 7.87,
+   "longitude": 80.65
+  },
+  "Economic Centre-Maradagahamula": {
+   "admin1": "Western",
+   "latitude": 7.23,
+   "longitude": 79.99
+  },
+  "Economic Centre-Pettah": {
+   "admin1": "Western",
+   "latitude": 6.93,
+   "longitude": 79.85
+  },
+  "Embilipitiya": {
+   "admin1": "Sabaragamuwa",
+   "latitude": 6.33,
+   "longitude": 80.85
+  },
+  "Fish market-Negombo": {
+   "admin1": "Western",
+   "latitude": 7.21,
+   "longitude": 79.83
+  },
+  "Fish market-Peliyagoda": {
+   "admin1": "Western",
+   "latitude": 6.97,
+   "longitude": 79.89
+  },
+  "Galenbindunuwewa": {
+   "admin1": "North Central",
+   "latitude": 8.29,
+   "longitude": 80.72
+  },
+  "Galle": {
+   "admin1": "Southern",
+   "latitude": 6.04,
+   "longitude": 80.22
+  },
+  "Gampaha": {
+   "admin1": "Western",
+   "latitude": 7.08,
+   "longitude": 79.98
+  },
+  "Hambantota": {
+   "admin1": "Southern",
+   "latitude": 6.14,
+   "longitude": 81.08
+  },
+  "Hanguranketha": {
+   "admin1": "Central",
+   "latitude": 7.18,
+   "longitude": 80.78
+  },
+  "Jaffna": {
+   "admin1": "Northern",
+   "latitude": 9.66,
+   "longitude": 80.01
+  },
+  "Kalutara": {
+   "admin1": "Western",
+   "latitude": 6.59,
+   "longitude": 79.96
+  },
+  "Kandy": {
+   "admin1": "Central",
+   "latitude": 7.29,
+   "longitude": 80.59
+  },
+  "Kegalle": {
+   "admin1": "Sabaragamuwa",
+   "latitude": 7.25,
+   "longitude": 80.34
+  },
+  "Keppetipola (DEC}": {
+   "admin1": "Uva",
+   "latitude": 6.91,
+   "longitude": 80.91
+  },
+  "Kilinochchi": {
+   "admin1": "Northern",
+   "latitude": 9.4,
+   "longitude": 80.4
+  },
+  "Kurunegala": {
+   "admin1": "North Western",
+   "latitude": 7.48,
+   "longitude": 80.32
+  },
+  "Mannar": {
+   "admin1": "Northern",
+   "latitude": 8.98,
+   "longitude": 79.9
+  },
+  "Matale": {
+   "admin1": "Central",
+   "latitude": 7.47,
+   "longitude": 80.62
+  },
+  "Matara": {
+   "admin1": "Southern",
+   "latitude": 5.95,
+   "longitude": 80.52
+  },
+  "Meegoda(DEC)": {
+   "admin1": "Western",
+   "latitude": 6.84,
+   "longitude": 80.05
+  },
+  "Monaragala": {
+   "admin1": "Uva",
+   "latitude": 6.87,
+   "longitude": 81.23
+  },
+  "Mulaitivu": {
+   "admin1": "Northern",
+   "latitude": 9.27,
+   "longitude": 80.81
+  },
+  "Mullativu": {
+   "admin1": "Northern",
+   "latitude": 9.32,
+   "longitude": 80.7
+  },
+  "National Average": {
+   "admin1": "Unknown",
+   "latitude": null,
+   "longitude": null
+  },
+  "Nikaweratiya": {
+   "admin1": "North Western",
+   "latitude": 7.75,
+   "longitude": 80.12
+  },
+  "Nuwara Eliya": {
+   "admin1": "Central",
+   "latitude": 6.95,
+   "longitude": 80.75
+  },
+  "Polonnaruwa": {
+   "admin1": "North Central",
+   "latitude": 7.93,
+   "longitude": 81.01
+  },
+  "Puttalam": {
+   "admin1": "North Western",
+   "latitude": 8.04,
+   "longitude": 79.84
+  },
+  "Rathnapura": {
+   "admin1": "Sabaragamuwa",
+   "latitude": 6.72,
+   "longitude": 80.34
+  },
+  "Thambuttegama": {
+   "admin1": "North Central",
+   "latitude": 8.16,
+   "longitude": 80.3
+  },
+  "Tissamaharama": {
+   "admin1": "Southern",
+   "latitude": 6.28,
+   "longitude": 81.29
+  },
+  "Trincomalee": {
+   "admin1": "Eastern",
+   "latitude": 8.57,
+   "longitude": 81.23
+  },
+  "Vavuniya": {
+   "admin1": "Northern",
+   "latitude": 8.75,
+   "longitude": 80.5
+  }
+ },
+ "pricetypes": [
+  "Retail",
+  "Wholesale"
+ ],
+ "years": [
+  2004,
+  2025
+ ],
+ "holdout": {
+  "features": {
+   "commodity": "Fish (dry, katta)",
+   "category": "meat, fish and eggs",
+   "unit": "KG",
+   "pricetype": "Retail",
+   "market": "Badulla",
+   "admin1": "Uva",
+   "latitude": 6.99,
+   "longitude": 81.04,
+   "year": 2025,
+   "month": 9
+  },
+  "actual": 2640.0
+ },
+ "train_rows": 23868,
+ "test_rows": 8627
+}
